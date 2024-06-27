@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+/*Common styles*/
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  margin: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 165px;
+  height: 50px;
+
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background: #f6762c;
+  border-radius: 5px;
+
+  transition: opacity 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/*Header*/
+.header {
+  padding: 25px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+}
+
+.header__nav {
+}
+
+.header__list {
+  display: flex;
+  gap: 30px;
+}
+
+.header__nav a {
+  font-size: 14px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.header__nav a.active {
+  opacity: 1;
+}
+
+.header__nav a:hover {
+  opacity: 0.9;
+}
+
+.main {
+}
+
+/*Main__Welcome*/
+
+.welcome {
+  box-sizing: border-box;
+  min-height: 100vh;
+
+  margin-top: -100px;
+  padding: 240px 0;
+
+  background-image: url("./images/welcome-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.welcome__text {
+  width: 550px;
+}
+
+.welcome__subtitle {
+  margin-bottom: 7px;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+.welcome__title {
+  font-size: 58px;
+}
+
+.welcome__desc {
+  margin: 40px 0;
+  font-size: 18px;
+  opacity: 0.7;
+}

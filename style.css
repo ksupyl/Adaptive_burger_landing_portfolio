@@ -14,22 +14,28 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
+p + p {
+  margin-top: 15px;
+}
+
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+}
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -70,12 +76,6 @@ h6 {
   align-items: center;
 }
 
-.header__logo {
-}
-
-.header__nav {
-}
-
 .header__list {
   display: flex;
   gap: 30px;
@@ -95,11 +95,7 @@ h6 {
   opacity: 0.9;
 }
 
-.main {
-}
-
-/*Main__Welcome*/
-
+/*Main__welcome*/
 .welcome {
   box-sizing: border-box;
   min-height: 100vh;
@@ -130,5 +126,48 @@ h6 {
 .welcome__desc {
   margin: 40px 0;
   font-size: 18px;
+  opacity: 0.7;
+}
+
+/*Main__food-list*/
+.food-list{
+  padding: 100px 0;
+}
+
+.food-list .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px 10px;
+}
+
+.food-list__card {
+  width: 260px;
+
+  overflow: hidden;
+  text-align: center;
+
+  background: #312F30;
+  border-radius: 10px;
+}
+
+.food-list__img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+
+}
+
+.food-list__text-wrapper {
+  padding: 30px 20px;
+}
+
+.food-list__title {
+  font-size: 20px;
+  margin-bottom: 13px;
+}
+
+.food-list__desc {
+  font-size: 16px;
   opacity: 0.7;
 }

@@ -1,2 +1,1 @@
-# Site_for_burger_restaurant_portfolio 
-## Option 2:
+# Adaptive_site_for_burger_restaurant_portfolio

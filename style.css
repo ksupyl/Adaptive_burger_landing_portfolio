@@ -236,7 +236,7 @@ img {
 
 /*Main__product*/
 .product {
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 .product .container {
@@ -306,3 +306,64 @@ img {
 .card-papa {
   background-image: url("./images/product-4.jpg");
 }
+
+/*Main__feedback*/
+.feedback {
+  padding: 50px 0 200px 0;
+}
+
+.feedback .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 880px;
+}
+
+.feedback__text {
+  margin: 0;
+  width: 370px;
+  text-align: center;
+}
+
+.feedback__text::before{
+  content: url(./images/icons/quote.svg);
+}
+
+.feedback__blockquote {
+  opacity: 0.7;
+  margin: 30px 0;
+}
+
+.feedback__author {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.feedback__subauthor {
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.7;
+
+  display: block;
+}
+
+/*Main__download*/
+.download {
+  background: #312F30;
+  padding: 60px 0;
+}
+
+.download .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.download__title {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+/*Footer*/

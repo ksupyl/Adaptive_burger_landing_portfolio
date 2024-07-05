@@ -376,6 +376,11 @@ font-size: 14px;
 color: rgba(255, 255, 255, 0.8);
 }
 
+.footer a:hover {
+  color: rgba(255, 255, 255, 0.9);
+  transition: color 0.3s;
+}
+
 .footer .footer__title {
   display: inline-block;
   margin-bottom: 15px;
@@ -402,34 +407,32 @@ color: rgba(255, 255, 255, 0.8);
   margin-bottom: 20px;
 }
 
+.footer__link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .footer__link + .footer__link {
   margin-top: 10px;
 }
 
-.footer__link_mail {
-
+.footer__link::before {
+  width: 12px;
+  height: 12px;
 }
 
-.footer__link_web {
-
+.footer__link_mail::before {
+  content: url("./images/icons/mail.svg");
 }
 
-.footer__nav {
-
+.footer__link_web::before {
+  content: url("./images/icons/mail.svg");
 }
 
 .footer__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
-
-.footer__list-title {
-
-}
-
-
-.footer__inner-list {
-
 }
 
 .footer__list-item + .footer__list-item {
@@ -444,8 +447,4 @@ color: rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: row;
   gap: 10px;
-}
-
-.footer__socials-link {
-
 }

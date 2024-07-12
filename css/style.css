@@ -111,7 +111,7 @@ img {
   margin-top: -100px;
   padding: 240px 0;
 
-  background-image: url("./images/welcome-bg.jpg");
+  background-image: url("../images/welcome-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -295,16 +295,16 @@ img {
 }
 
 .card-queen {
-  background-image: url("./images/product-1.jpg");
+  background-image: url("../images/product-1.jpg");
 }
 .card-pizza {
-  background-image: url("./images/product-2.jpg");
+  background-image: url("../images/product-2.jpg");
 }
 .card-burger {
-  background-image: url("./images/product-3.jpg");
+  background-image: url("../images/product-3.jpg");
 }
 .card-papa {
-  background-image: url("./images/product-4.jpg");
+  background-image: url("../images/product-4.jpg");
 }
 
 /*Main__feedback*/
@@ -327,7 +327,7 @@ img {
 }
 
 .feedback__text::before{
-  content: url(./images/icons/quote.svg);
+  content: url(../images/icons/quote.svg);
 }
 
 .feedback__blockquote {
@@ -423,11 +423,11 @@ color: rgba(255, 255, 255, 0.8);
 }
 
 .footer__link_mail::before {
-  content: url("./images/icons/mail.svg");
+  content: url("../images/icons/mail.svg");
 }
 
 .footer__link_web::before {
-  content: url("./images/icons/mail.svg");
+  content: url("../images/icons/global.svg");
 }
 
 .footer__list {
@@ -437,10 +437,6 @@ color: rgba(255, 255, 255, 0.8);
 
 .footer__list-item + .footer__list-item {
   margin-top: 15px;
-}
-
-.footer__socials {
-
 }
 
 .footer__socials-icons {

@@ -144,7 +144,7 @@ img {
 
 .food-list .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 40px 10px;
 }
@@ -445,6 +445,59 @@ color: rgba(255, 255, 255, 0.8);
   gap: 10px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1120px) {
+  .welcome__desc{
+    opacity: 1;
+    backdrop-filter: blur(6px);
+  }
+}
 
+@media (max-width: 970px) {
+  .welcome__title{
+    backdrop-filter: blur(6px);
+  }
+}
+
+@media (max-width: 950px) {
+  .order .container{
+    flex-direction: column;
+  }
+
+  .order__text {
+    text-align: center;
+  }
+
+  .order .btn{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer .container{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "nav nav" 
+      "contacts socials";
+      justify-items: center;
+      gap: 60px 80px;
+  }
+
+  .footer__nav{
+    grid-area: nav;
+  }
+
+  .footer__list{
+    gap: 100px;
+  }
+
+  .footer__contacts{
+    grid-area: contacts;
+    justify-self: end;
+  }
+
+  .footer__socials{
+    grid-area: socials;
+    align-self: center;
+    justify-self: start;
+  }
 }

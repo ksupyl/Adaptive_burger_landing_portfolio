@@ -461,6 +461,7 @@ color: rgba(255, 255, 255, 0.8);
 @media (max-width: 950px) {
   .order .container{
     flex-direction: column;
+    padding-right: 0;
   }
 
   .order__text {
@@ -499,5 +500,25 @@ color: rgba(255, 255, 255, 0.8);
     grid-area: socials;
     align-self: center;
     justify-self: start;
+  }
+}
+
+@media (max-width: 850px) {
+  .footer__list{
+    gap: 80px;
+  }
+
+  .feedback{
+    padding-bottom: 100px;
+  }
+
+  .footer{
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .header .container{
+    flex-direction: column;
   }
 }

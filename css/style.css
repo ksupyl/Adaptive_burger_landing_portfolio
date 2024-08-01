@@ -554,7 +554,20 @@ color: rgba(255, 255, 255, 0.8);
   .product{
     padding: 60px 0 100px;
   }
-  /* .header .container{
+
+  .product__card{
+    width: 100%;
+    padding-left: 50%;
+  }
+
+  .product__card:nth-child(even){
+    padding-right: 50%;
+  }
+  /*  */
+}
+
+@media (max-width: 500px) {
+  .header .container{
     flex-direction: column;
     gap: 10px;
   }
@@ -564,8 +577,4 @@ color: rgba(255, 255, 255, 0.8);
     text-align: center;
     gap: 10px;
   }
-
-  .header .btn{
-    display: none;
-  } */
 }

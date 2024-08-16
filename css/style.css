@@ -526,6 +526,31 @@ img {
 }
 
 @media (max-width: 850px) {
+  .header .container{
+    position: relative;
+    z-index: 10;
+  }
+
+  .welcome{
+    position: relative;
+  }
+
+  .welcome .container{
+    position: relative;
+    z-index: 10;
+  }
+
+  .welcome::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
   .footer__list {
     gap: 60px;
   }
@@ -706,5 +731,42 @@ img {
   .welcome {
     margin-top: -240px;
     padding-top: 280px;
+  }
+
+  .product__desc{
+    opacity: 1;
+  }
+
+  .product__card{
+    padding-left: 30px;
+
+    position: relative;
+
+    text-align: center;
+  }
+
+  .product__card:nth-child(even){
+    padding-right: 30px;
+  }
+
+  .product .btn{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .product__card > * {
+    position: relative;
+    z-index: 10;
+  }
+
+  .product__card::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 }
